@@ -17,6 +17,12 @@ There are four sets in this package:
 + `english_words_lower_alpha_set`: A set of English words containing
    lower-case letters; with no punctuation.
 
+where the `lower` set is the same as the `english_words_set` with all
+upper-case letters converted to lower-case letters, and where the
+`alpha` set is the same as the `english_words_set` with all apostrophes
+(`'`) removed. The `lower_alpha` set intuitively has both of the rules
+from the `lower` set and the `alpha` set applied.
+
 You can use use these like you would any Python set:
 
 ```
