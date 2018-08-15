@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/pypi/v/english-words.svg)](https://github.com/mwiens91/english-words-py)
+[![PyPI](https://img.shields.io/pypi/v/english-words.svg)](https://pypi.org/project/english-words/)
 
 # english-words-py
 
