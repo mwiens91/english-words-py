@@ -1,4 +1,4 @@
-"""Contains sets of English words.
+"""Contains sets of English words from obtained from https://svnweb.freebsd.org/csrg/share/dict/.
 
 There are four sets in this module:
 
