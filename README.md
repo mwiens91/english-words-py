@@ -3,7 +3,7 @@
 # english-words-py
 
 Contains sets of English words from
-[svnweb.freebsd.org/csrg/share/dic/](https://svnweb.freebsd.org/csrg/share/dic/).
+[svnweb.freebsd.org/csrg/share/dict/](https://svnweb.freebsd.org/csrg/share/dict/).
 This is up to date with revision 61569 of their words list.
 
 There are four sets in this package:
