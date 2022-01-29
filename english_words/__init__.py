@@ -12,6 +12,12 @@ english_words_lower_alpha_set: A set of English words containing
     lower-case letters; with no punctuation.
 """
 
+web2_words = open("./web2.txt", "r").read().split("\n")
+web2_lower = list(w.lower() for w in web2_words)
+
+web2_words_set = set(web2_words)
+web2_lower_set = set(web2_lower)
+
 english_words_set = {
     'a',
     'AAA',
