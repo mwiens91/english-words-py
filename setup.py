@@ -25,4 +25,5 @@ setup(
         'Programming Language :: Python',
     ],
     packages=['english_words'],
+    package_data={"english_words": ["web2.txt"]},
 )
