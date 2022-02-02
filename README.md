@@ -12,6 +12,10 @@ There are four sets in this package:
     lower-case letters; with punctuation.
 + `english_words_lower_set`: A set of English words containing
     lower-case letters; with punctuation.
++ `english_words_upper_set`:  A set of English words containing upper-case
+    letters; with punctuation.
++ `english_words_captialized_set`: A set of English words containing captitalized words; with punctuation.
+
 + `english_words_alpha_set`: A set of English words containing both
     upper- and lower-case letters; with no punctuation.
 + `english_words_lower_alpha_set`: A set of English words containing
