@@ -25,5 +25,6 @@ setup(
         'Programming Language :: Python',
     ],
     packages=['english_words'],
-    package_data={"english_words": ["web2.txt"]},
+    package_data={"english_words": ["data/*.txt.gz"]},
+    include_package_data=True
 )
