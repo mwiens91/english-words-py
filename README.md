@@ -38,7 +38,7 @@ every word in the `gcide` word list is capitalized.
 
 | Name/URL | Identifier | Notes |
 | :--- | :--- | :--- |
-| [GCIDE 0.53 index](https://ftp.gnu.org/gnu/gcide/) | `gcide` | Words found in GNU Collaborative International Dictionary of English 0.53. All words capitalized, and like a dictionary.<br/><br/>Unicode characters are currently unprocessed; for example `<ae/` is present in the dictionary instead of `æ`. Ideally, these should all be converted. |
+| [GCIDE 0.53 index](https://ftp.gnu.org/gnu/gcide/) | `gcide` | Words found in GNU Collaborative International Dictionary of English 0.53. All words capitalized.<br/><br/>Unicode characters are currently unprocessed; for example `<ae/` is present in the dictionary instead of `æ`. Ideally, these should all be converted. |
 | [web2 revision 326913](https://svnweb.freebsd.org/base/head/share/dict/web2?view=markup&pathrev=326913) | `web2` | |
 
 ## Adding additional word lists
