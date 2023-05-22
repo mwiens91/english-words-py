@@ -23,7 +23,8 @@ def get_english_words_set(
 
     if alpha:
         options.append(ALPHA)
-    elif lower:
+
+    if lower:
         options.append(LOWER)
 
     # Get sets to combine
