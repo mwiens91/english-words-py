@@ -13,7 +13,7 @@ from english_words.util import get_data_file_path
 
 def get_english_words_set(
     sources: typing.Iterable[str], alpha: bool = False, lower: bool = False
-) -> set[str]:
+) -> typing.Set[str]:
     # Set up a list to dump all the sets in
     sets_list = []
 
