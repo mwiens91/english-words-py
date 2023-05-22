@@ -55,9 +55,15 @@ for raw_data_path in glob.glob(os.path.join(RAW_DATA_DIR, "*.txt")):
             # operations
             for option in current_options:
                 if option == ALPHA:
-                    lines_copy = [
-                        re.sub("[^A-Za-z0-9]", "", l) for l in lines_copy
-                    ]
+                    new_lines_copy = []
+
+                    for l in lines_copy:
+                        new_l = re.sub("[^A-Za-z0-9]", "", l)
+
+                        if new_l:
+                            new_lines_copy.append(new_l)
+
+                    lines_copy = new_lines_copy
                 elif option == LOWER:
                     lines_copy = [l.lower() for l in lines_copy]
 
