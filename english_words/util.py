@@ -1,11 +1,11 @@
 """Stores utility functions for the main function."""
 
+from collections.abc import Iterable
 import os
-import typing
 from english_words.constants import PROCESSED_DATA_DIR
 
 
-def get_data_file_path(identifier: str, options: typing.Iterable[str]) -> str:
+def get_data_file_path(identifier: str, options: Iterable[str]) -> str:
     # This is basically repeated code taken from the script used to
     # process data
     data_file_name = (

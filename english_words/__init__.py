@@ -4,15 +4,15 @@ The package readme provides documentation for this package and the main
 function.
 """
 
+from collections.abc import Iterable
 import os
 import pickle
-import typing
 from english_words.constants import PROCESSED_DATA_DIR, ALPHA, LOWER
 from english_words.util import get_data_file_path
 
 
 def get_english_words_set(
-    sources: typing.Iterable[str], alpha: bool = False, lower: bool = False
+    sources: Iterable[str], alpha: bool = False, lower: bool = False
 ) -> set[str]:
     # Set up a list to dump all the sets in
     sets_list = []
