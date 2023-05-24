@@ -32,13 +32,13 @@ combination of options will not cause the function to run slower.
 
 Note that some care needs to be used when combining word lists. For
 example, only proper nouns in the `web2` word list are capitalized, but
-every word in the `gcide` word list is capitalized.
+most words in the `gcide` word list are capitalized.
 
 ### Word lists
 
 | Name/URL | Identifier | Notes |
 | :--- | :--- | :--- |
-| [GCIDE 0.53 index](https://ftp.gnu.org/gnu/gcide/) | `gcide` | Words found in GNU Collaborative International Dictionary of English 0.53. All words capitalized. Contains some entries with multiple words (currently you must use the alpha option to exclude these).<br/><br/>Unicode characters are currently unprocessed; for example `<ae/` is present in the dictionary instead of `æ`. Ideally, these should all be converted. |
+| [GCIDE 0.53 index](https://ftp.gnu.org/gnu/gcide/) | `gcide` | Words found in GNU Collaborative International Dictionary of English 0.53. Most words capitalized (not exactly sure what the capitalization convention is). Contains some entries with multiple words (currently you must use the alpha option to exclude these).<br/><br/>Unicode characters are currently unprocessed; for example `<ae/` is present in the dictionary instead of `æ`. Ideally, these should all be converted. |
 | [web2 revision 326913](https://svnweb.freebsd.org/base/head/share/dict/web2?view=markup&pathrev=326913) | `web2` | |
 
 ## Adding additional word lists
