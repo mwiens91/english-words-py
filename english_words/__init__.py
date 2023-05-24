@@ -14,6 +14,10 @@ from english_words.util import get_data_file_path
 def get_english_words_set(
     sources: Iterable[str], alpha: bool = False, lower: bool = False
 ) -> set[str]:
+    # Ensure sources is non-empty
+    if not sources:
+        raise ValueError("No word list sources were provided")
+
     # Set up a list to dump all the sets in
     sets_list = []
 
