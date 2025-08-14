@@ -1,7 +1,6 @@
 """Stores utility functions for the main function."""
 
 from collections.abc import Iterable
-from english_words.constants import PROCESSED_DATA_DIR
 
 
 def get_data_file_path(identifier: str, options: Iterable[str]) -> str:
@@ -13,7 +12,4 @@ def get_data_file_path(identifier: str, options: Iterable[str]) -> str:
         + "_".join(options)
         + ".pickle"
     )
-
-    data_file_path = PROCESSED_DATA_DIR + "/" + data_file_name
-
-    return data_file_path
+    return data_file_name

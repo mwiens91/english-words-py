@@ -36,7 +36,7 @@ def get_english_words_set(
         data_path = get_data_file_path(source, options)
 
         try:
-            pickle_bytes = resources.read_binary(__package__, data_path)
+            pickle_bytes = resources.files(__package__).joinpath("data/" + data_path).read_bytes()
             sets_list.append(pickle.loads(pickle_bytes))
         except FileNotFoundError as e:
             raise ValueError(
