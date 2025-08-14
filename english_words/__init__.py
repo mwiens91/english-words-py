@@ -7,8 +7,8 @@ function.
 from collections.abc import Iterable
 from importlib import resources
 import pickle
-from english_words.constants import ALPHA, LOWER
-from english_words.util import get_data_file_path
+from english_words.constants import ALPHA, LOWER, PROCESSED_DATA_DIR
+from english_words.util import get_data_file_name
 
 
 def get_english_words_set(
@@ -33,10 +33,14 @@ def get_english_words_set(
 
     # Get sets to combine
     for source in sources:
-        data_path = get_data_file_path(source, options)
+        data_file_name = get_data_file_name(source, options)
 
         try:
-            pickle_bytes = resources.files(__package__).joinpath("data/" + data_path).read_bytes()
+            pickle_bytes = (
+                resources.files(__package__)
+                .joinpath(PROCESSED_DATA_DIR, data_file_name)
+                .read_bytes()
+            )
             sets_list.append(pickle.loads(pickle_bytes))
         except FileNotFoundError as e:
             raise ValueError(

@@ -1,10 +1,7 @@
 """Stores constants for all modules."""
 
-import os
-
-
 # Directories
-PACKAGE_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROCESSED_DATA_DIR = "data"  # relative to package root
 
 # Option constants
 ALPHA = "alpha"
