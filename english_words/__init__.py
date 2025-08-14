@@ -5,9 +5,9 @@ function.
 """
 
 from collections.abc import Iterable
-import os
+from importlib import resources
 import pickle
-from english_words.constants import PROCESSED_DATA_DIR, ALPHA, LOWER
+from english_words.constants import ALPHA, LOWER
 from english_words.util import get_data_file_path
 
 
@@ -36,8 +36,8 @@ def get_english_words_set(
         data_path = get_data_file_path(source, options)
 
         try:
-            with open(data_path, "rb") as f:
-                sets_list.append(pickle.load(f))
+            pickle_bytes = resources.read_binary(__package__, data_path)
+            sets_list.append(pickle.loads(pickle_bytes))
         except FileNotFoundError as e:
             raise ValueError(
                 f"{source} is not a valid word list identifier"
