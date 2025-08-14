@@ -14,6 +14,19 @@ from english_words.util import get_data_file_name
 def get_english_words_set(
     sources: Iterable[str], alpha: bool = False, lower: bool = False
 ) -> set[str]:
+    """Get a set of English words by combining word lists.
+
+    Args:
+        sources: An iterable of word list identifiers.
+        alpha: A flag specifying that non-alphanumeric are removed from
+          words.
+        lower: A flag specifying that upper-case letters are converted
+          to lower-case
+
+    Returns:
+        A set of drawn from the provided word lists, adjusted according
+        to the provided options.
+    """
     # Ensure sources is non-empty
     if not sources:
         raise ValueError("No word list sources were provided")
